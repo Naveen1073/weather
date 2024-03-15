@@ -1,0 +1,4 @@
+rainy photo website {https://www.iconfinder.com/icons/2682848/day_forecast_sun_sunny_weather_icon}
+opwn weather details {https://openweathermap.org/forecast5}
+weather template{https://www.pinterest.com/pin/331577591320391577/visual-search/?x=16&y=16&w=532&h=391&cropSource=6}
+5days forecost link{api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}}

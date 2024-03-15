@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa;
+}
+
+.weather-full-div {
+    display: flex;
+    justify-content: space-between;
+  
+    min-height: fit-content;
+
+}
+
+.Us-Img-set img{
+    width: 100%;
+    height: 150px;
+    opacity: 0.5;
+    
+}
+.temp1 {
+    width: 25%;
+    background-color: wheat;
+    padding: 40px;
+    /* border-radius: 30px 0px 0px 30px; */
+}
+
+.temp2 {
+    width: 75%;
+    background-color: whitesmoke;
+    /* border-radius: 0px 30px 30px 0px; */
+    padding: 30px;
+}
+
+.temp-display {
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    /* background-color: rgb(136, 96, 96); */
+}
+
+.temp-display h1 {
+    font-size: 45px;
+    padding-bottom: 8px;
+
+}
+
+.temp-display img {
+    width: 80%;
+    /* height: 25%; */
+    /* background-color: blue; */
+    margin: 30px 26px;
+
+}
+
+.week-day {
+    display: flex;
+    gap: 10px;
+}
+
+.week-day button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: transparent;
+    font-size: 20px;
+    color: rgb(212, 148, 148);
+    font-weight: bolder;
+}
+
+.week-per {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+    /* overflow: scroll; */
+
+    flex-direction: row;
+
+}
+
+/* #todaycal:hover {
+   
+} */
+/* #todaycal::after {
+    color: orange;
+    border-bottom: 1px solid black;
+
+}
+
+#weekcall:hover {
+    color: black;
+    border-bottom: 1px solid black;
+
+} */
+
+.week-per1 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+    display: none;
+    /* overflow: scroll; */
+
+}
+
+.monday {
+    width: 170px;
+    background-color: rgb(193, 206, 216);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 20px;
+
+}
+
+.monday img {
+    width: 40%;
+}
+
+.monday h1 {
+    font-size: 14px;
+}
+
+.today-weather h1 {
+
+    font-size: 24px;
+    /* color: rgb(212, 148, 148); */
+    font-weight: bolder;
+}
+
+.week-day-order {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* background-color: blueviolet; */
+    padding: 30px 0px 40px 0px;
+}
+.Us-Img-set{
+    padding-top: 10px;
+    position: relative;
+  
+}
+.dubai{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 37%;
+    color: white;
+
+}
+.today-details {
+    width: 280px;
+    /* background-color: brown; */
+    min-height: 122px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 5px rgba(227, 218, 227, 1);
+
+}
+
+.today-details .topis {
+    text-align: start;
+    color: rgb(212, 148, 148);
+    font-size: 15px;
+
+}
+#cities{
+    padding: 10px;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 30px 0px 0px 30px;
+    margin: 0px;
+    width: 80%;
+}
+#search-button{
+    padding: 10px 15px 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 0px 30px 30px 0px;
+    margin: 0px;
+    width: 15%;
+    backdrop-filter: blur(10px);
+    background-color: rgb(227, 192, 101);
+}
+.Details{
+    font-size: 22px;
+    padding-top: 15px;
+}
+#search-button:active{
+    background-color: red;
+}
+.input-div{
+    width: 100%;
+}
+@media screen and (max-width:650px) {
+    .weather-full-div{
+        
+        flex-direction: column;
+    }
+    .temp1{
+        width: 100%;
+    }
+    .temp-display img{
+        margin: 0px 26px;
+    }
+    .temp2{
+        width: 100%;
+    }
+}
+@media screen and (max-width:418px){
+    .monday{
+        width: 100%;
+    }
+    .today-details{
+        width: 100%;
+    }
+}

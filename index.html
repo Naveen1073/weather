@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa:wght@300&family=Dosis&family=Inter:wght@300;500&family=Lato&family=Montserrat:wght@300&family=Oxygen&family=Ubuntu&display=swap');
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="weather-full-div">
+            <div class="temp1">
+                <div class="input-div">
+                    <input type="text" id="cities" placeholder="Enter city name">
+                    <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <!-- <label for="cities">Select a City:</label>
+                    <select id="cities" name="cities">
+                        <option value="new-york">New York</option>
+                        <option value="london">London</option>
+                        <option value="tokyo">Tokyo</option>
+                        <option value="paris">Paris</option>
+                        <option value="sydney">Sydney</option>
+                        <option value="beijing">Beijing</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+                        <option value="cape-town">Cape Town</option>
+                        <option value="berlin">Berlin</option>
+                        <option value="rome">Rome</option>
+                        <option value="moscow">Moscow</option>
+                        <option value="cairo">Cairo</option>
+                        <option value="bangkok">Bangkok</option>
+                        <option value="toronto">Toronto</option>
+                        <option value="los-angeles">Los Angeles</option>
+                        <option value="mexico-city">Mexico City</option>
+                        <option value="amsterdam">Amsterdam</option>
+                        <option value="hong-kong">Hong Kong</option>
+                        <option value="istanbul">Istanbul</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="jakarta">Jakarta</option>
+                        <option value="nairobi">Nairobi</option>
+                        <option value="athens">Athens</option>
+                        <option value="bucharest">Bucharest</option>
+                        <option value="seoul">Seoul</option>
+                        <option value="stockholm">Stockholm</option>
+                        <option value="budapest">Budapest</option>
+                        <option value="cairo">Cairo</option>
+                        <option value="vienna">Vienna</option>
+                        <option value="lisbon">Lisbon</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="oslo">Oslo</option>
+                        <option value="warsaw">Warsaw</option>
+                        <option value="helsinki">Helsinki</option>
+                        <option value="dublin">Dublin</option>
+                        <option value="prague">Prague</option>
+                        <option value="athens">Athens</option>
+                        <option value="bucharest">Bucharest</option>
+                        <option value="seoul">Seoul</option>
+                        <option value="stockholm">Stockholm</option>
+                        <option value="budapest">Budapest</option>
+                        <option value="cairo">Cairo</option>
+                        <option value="vienna">Vienna</option>
+                        <option value="lisbon">Lisbon</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="oslo">Oslo</option>
+                        <option value="warsaw">Warsaw</option>
+                        <option value="helsinki">Helsinki</option>
+                        <option value="dublin">Dublin</option>
+                        <option value="prague">Prague</option>
+                        <option value="brussels">Brussels</option>
+                        <option value="zurich">Zurich</option>
+                        <option value="vienna">Vienna</option>
+                        <option value="lisbon">Lisbon</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="oslo">Oslo</option>
+                        <option value="warsaw">Warsaw</option>
+                        <option value="helsinki">Helsinki</option>
+                        <option value="dublin">Dublin</option>
+                        <option value="prague">Prague</option>
+                        <option value="brussels">Brussels</option>
+                        <option value="zurich">Zurich</option>
+                        <option value="vienna">Vienna</option>
+                        <option value="lisbon">Lisbon</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="oslo">Oslo</option>
+                        <option value="warsaw">Warsaw</option>
+                        <option value="helsinki">Helsinki</option>
+                        <option value="dublin">Dublin</option>
+                        <option value="prague">Prague</option>
+                    </select> -->
+
+
+                </div>
+                <div class="temp-display">
+                    <img id="title-img" src=""  alt="">
+                    <h1 id="current-temp">12</h1>
+                    <h3 id="date-time">Monday 06.00pm</h3>
+                </div>
+                <div class="Us-Img-set">
+                    <img src="./img/nyc-4854718_1280.jpg" alt="">
+                    <h2 class="dubai">Dubai</h2>
+                </div>
+                <!-- <div>
+                    <p> <i class="fa-solid fa-cloud"></i> most couldy</p>
+                    <p> <i class="fa-regular fa-snowflake"></i>rain probolity</p>
+                </div> -->
+            </div>
+
+            <div class="temp2">
+                <div class="week-day">
+                    <button id="todaycal">Week</button>
+                    <button id="weekcall" onclick="dailydetailscall(installcity.value,1)">Today</button>
+                </div>
+                <div class="week-per1" id="week-per-id">
+                    <div class="monday">
+                        <h1 id="time">12:00 AM</h1>
+                        <img src="sun.png" id="n12forimg" alt="">
+                        <p id="n12">12 <span>oC</span></p>
+                    </div>
+                    <div class="monday">
+                        <h1 id="time">03:00 AM</h1>
+                        <img src="sun.png" id="n03forimg" alt="">
+                        <p id="n03">12 <span>oC</span></p>
+                    </div>
+                    <div class="monday">
+                        <h1 id="time">06:00 AM</h1>
+                        <img src="sun.png" id="n05forimg" alt="">
+                        <p id="n05">12 <span>oC</span></p>
+                    </div>
+                    <div class="monday">
+                        <h1 id="time">09:00 AM</h1>
+                        <img src="sun.png" id="n09forimg" alt="">
+                        <p id="n09">12 <span>oC</span></p>
+                    </div>
+                    <div class="monday">
+                        <h1 id="time">12:00 PM</h1>
+                        <img src="sun.png" id="p12forimg" alt="">
+                        <p id="p12">12 <span>oC</span></p>
+                    </div>
+                    <div class="monday">
+                        <h1 id="time">03:00 PM</h1>
+                        <img src="sun.png" id="p03forimg" alt="">
+                        <p id="p03">12 <span>oC</span></p>
+                    </div>
+                    <div class="monday">
+                        <h1 id="time">06:00 PM</h1>
+                        <img src="sun.png" id="p06forimg" alt="">
+                        <p id="p06">12 <span>oC</span></p>
+                    </div>
+                    <div class="monday">
+                        <h1 id="time">09:00 PM</h1>
+                        <img src="sun.png" id="p09forimg" alt="">
+                        <p id="p09">12 <span>oC</span></p>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="week-per" id="week-per-id2">
+                    <div class="monday" onclick="dailydetailscall(installcity.value,1)">
+                        <h1 id="mon">MON</h1>
+                        <img src="sun.png" id="sun-img" alt="">
+                        <p id="mon-temp">12 <span>Oc</span></p>
+                    </div>
+                    <div class="monday" onclick="dailydetailscall(installcity.value,2)">
+                        <h1 id="tue">TUE</h1>
+                        <img src="sun.png" id="mon-img"  alt="">
+                        <p id="tue-temp">12 <span>Oc</span></p>
+                    </div>
+                    <div class="monday" onclick="dailydetailscall(installcity.value,3)">
+                        <h1 id="wed">WED</h1>
+                        <img src="sun.png" id="tue-img"  alt="">
+                        <p id="wed-temp">12 <span>Oc</span></p>
+                    </div>
+                    <div class="monday" onclick="dailydetailscall(installcity.value,4)">
+                        <h1 id="thu">THU</h1>
+                        <img src="sun.png" id="wed-img"  alt="">
+                        <p id="thu-temp">12 <span>Oc</span></p>
+                    </div>
+                    <div class="monday" onclick="dailydetailscall(installcity.value,5)">
+                        <h1 id="fri">FRI</h1>
+                        <img src="sun.png" id="thus-img"  alt="">
+                        <p id="fri-temp"> 12 <span>Oc</span></p>
+                    </div>
+                </div>
+                <div class="today">
+                    <div class="today-weather">
+                        <h1>Today weather</h1>
+                    </div>
+                    <div class="week-day-order">
+                        <div class="today-details">
+                            <h3 class="topis">Feel Like</h3>
+                            <h3 class="Details" id="feel-like"></h3>
+                            <!-- <h1 id="value">value</h1> -->
+                        </div>
+                        <div class="today-details">
+                            <h3 class="topis">Wind Status</h3>
+                            <h3 class="Details" id="wind-status"><span>km/h</span></h3>
+                            <!-- <h1 id="value">value</h1> -->
+                        </div>
+                        <div class="today-details">
+                            <h3 class="topis">Sunrise & Sunset</h3>
+                            <span>
+                                <i class="fa-solid fa-arrow-up"></i> <span id="sunrise-set"></span>
+                            </span>
+                            <span><i class="fa-solid fa-arrow-down"></i><span id="sunriset"></span>
+                            </span>
+                            <!-- <h1 id="value">value</h1> -->
+                        </div>
+                        <div class="today-details">
+                            <h3 class="topis">Humadity</h3>
+                            <h3 class="Details" id="humadity"><span>%</span></h3>
+                            <!-- <h1 id="value">value</h1> -->
+                        </div>
+                        <div class="today-details">
+                            <h3 class="topis">Visibility</h3>
+                            <h3 class="Details" id="Visibility"><span>/KM</span></h3>
+                            <!-- <h1 id="value">value</h1> -->
+                        </div>
+                        <div class="today-details">
+                            <h3 class="topis">Air Qulity</h3>
+                            <h3 class="Details" id="sea-level"></h3>
+                            <!-- <h1 id="value">value</h1> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="inndex.js"></script>
+</body>
+
+</html>
